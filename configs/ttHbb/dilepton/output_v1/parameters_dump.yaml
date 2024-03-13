@@ -77,10 +77,10 @@ lumi:
       D: 31839.492009
       tot: 59832.47534
   goldenJSON:
-    2016_PreVFP: /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/datacert/Cert_271036-284044_13TeV_Legacy2016_Collisions16_JSON.txt
-    2016_PostVFP: /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/datacert/Cert_271036-284044_13TeV_Legacy2016_Collisions16_JSON.txt
-    '2017': /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/datacert/Cert_294927-306462_13TeV_UL2017_Collisions17_GoldenJSON.txt
-    '2018': /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/datacert/Cert_314472-325175_13TeV_Legacy2018_Collisions18_JSON.txt
+    2016_PreVFP: /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/datacert/Cert_271036-284044_13TeV_Legacy2016_Collisions16_JSON.txt
+    2016_PostVFP: /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/datacert/Cert_271036-284044_13TeV_Legacy2016_Collisions16_JSON.txt
+    '2017': /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/datacert/Cert_294927-306462_13TeV_UL2017_Collisions17_GoldenJSON.txt
+    '2018': /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/datacert/Cert_314472-325175_13TeV_Legacy2018_Collisions18_JSON.txt
 default_jets_calibration:
   jec_name_map:
     JetPt: pt
@@ -96,213 +96,213 @@ default_jets_calibration:
     JetPhi: phi
     UnClusteredEnergyDeltaX: MetUnclustEnUpDeltaX
     UnClusteredEnergyDeltaY: MetUnclustEnUpDeltaY
-  factory_files_dir: /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/
+  factory_files_dir: /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/
   factory_configuration:
     AK4PFchs:
       JES_JER_Syst:
         2016_PreVFP:
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L1FastJet_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L2Relative_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL16APV_V7_MC_UncertaintySources_AK4PFchs.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_Uncertainty_AK4PFchs.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK4PFchs.jr.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK4PFchs.jersf.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L1FastJet_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L2Relative_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL16APV_V7_MC_UncertaintySources_AK4PFchs.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_Uncertainty_AK4PFchs.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK4PFchs.jr.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK4PFchs.jersf.txt.gz
         2016_PostVFP:
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L1FastJet_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L2Relative_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL16_V7_MC_UncertaintySources_AK4PFchs.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_Uncertainty_AK4PFchs.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK4PFchs.jr.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK4PFchs.jersf.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L1FastJet_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L2Relative_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL16_V7_MC_UncertaintySources_AK4PFchs.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_Uncertainty_AK4PFchs.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK4PFchs.jr.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK4PFchs.jersf.txt.gz
         '2017':
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L1FastJet_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L2Relative_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL17_V5_MC_UncertaintySources_AK4PFchs.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_Uncertainty_AK4PFchs.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_PtResolution_AK4PFchs.jr.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_SF_AK4PFchs.jersf.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L1FastJet_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L2Relative_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL17_V5_MC_UncertaintySources_AK4PFchs.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_Uncertainty_AK4PFchs.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_PtResolution_AK4PFchs.jr.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_SF_AK4PFchs.jersf.txt.gz
         '2018':
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L1FastJet_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L2Relative_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL18_V5_MC_UncertaintySources_AK4PFchs.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_Uncertainty_AK4PFchs.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_PtResolution_AK4PFchs.jr.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_SF_AK4PFchs.jersf.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L1FastJet_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L2Relative_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL18_V5_MC_UncertaintySources_AK4PFchs.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_Uncertainty_AK4PFchs.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_PtResolution_AK4PFchs.jr.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_SF_AK4PFchs.jersf.txt.gz
       JES_JER_noJESSyst:
         2016_PreVFP:
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L1FastJet_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L2Relative_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK4PFchs.jr.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK4PFchs.jersf.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L1FastJet_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L2Relative_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK4PFchs.jr.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK4PFchs.jersf.txt.gz
         2016_PostVFP:
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L1FastJet_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L2Relative_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK4PFchs.jr.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK4PFchs.jersf.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L1FastJet_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L2Relative_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK4PFchs.jr.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK4PFchs.jersf.txt.gz
         '2017':
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L1FastJet_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L2Relative_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_PtResolution_AK4PFchs.jr.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_SF_AK4PFchs.jersf.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L1FastJet_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L2Relative_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_PtResolution_AK4PFchs.jr.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_SF_AK4PFchs.jersf.txt.gz
         '2018':
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L1FastJet_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L2Relative_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_PtResolution_AK4PFchs.jr.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_SF_AK4PFchs.jersf.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L1FastJet_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L2Relative_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_PtResolution_AK4PFchs.jr.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_SF_AK4PFchs.jersf.txt.gz
       JES_noJER:
         2016_PreVFP:
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L1FastJet_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L2Relative_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL16APV_V7_MC_UncertaintySources_AK4PFchs.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_Uncertainty_AK4PFchs.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L1FastJet_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L2Relative_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL16APV_V7_MC_UncertaintySources_AK4PFchs.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_Uncertainty_AK4PFchs.junc.txt.gz
         2016_PostVFP:
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L1FastJet_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L2Relative_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL16_V7_MC_UncertaintySources_AK4PFchs.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_Uncertainty_AK4PFchs.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L1FastJet_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L2Relative_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL16_V7_MC_UncertaintySources_AK4PFchs.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_Uncertainty_AK4PFchs.junc.txt.gz
         '2017':
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L1FastJet_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L2Relative_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL17_V5_MC_UncertaintySources_AK4PFchs.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_Uncertainty_AK4PFchs.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L1FastJet_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L2Relative_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL17_V5_MC_UncertaintySources_AK4PFchs.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_Uncertainty_AK4PFchs.junc.txt.gz
         '2018':
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L1FastJet_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L2Relative_AK4PFchs.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL18_V5_MC_UncertaintySources_AK4PFchs.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_Uncertainty_AK4PFchs.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L1FastJet_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L2Relative_AK4PFchs.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL18_V5_MC_UncertaintySources_AK4PFchs.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_Uncertainty_AK4PFchs.junc.txt.gz
     AK8PFPuppi:
       JES_JER_Syst:
         2016_PreVFP:
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L2Relative_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK8PFPuppi.jr.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK8PFPuppi.jersf.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L2Relative_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK8PFPuppi.jr.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK8PFPuppi.jersf.txt.gz
         2016_PostVFP:
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L2Relative_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK8PFPuppi.jr.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK8PFPuppi.jersf.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L2Relative_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK8PFPuppi.jr.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK8PFPuppi.jersf.txt.gz
         '2017':
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L2Relative_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_PtResolution_AK8PFPuppi.jr.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_SF_AK8PFPuppi.jersf.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L2Relative_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_PtResolution_AK8PFPuppi.jr.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_SF_AK8PFPuppi.jersf.txt.gz
         '2018':
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L2Relative_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_PtResolution_AK8PFPuppi.jr.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_SF_AK8PFPuppi.jersf.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L2Relative_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_PtResolution_AK8PFPuppi.jr.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_SF_AK8PFPuppi.jersf.txt.gz
       JES_JER_noJESSyst:
         2016_PreVFP:
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L2Relative_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK8PFPuppi.jr.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK8PFPuppi.jersf.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L2Relative_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK8PFPuppi.jr.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK8PFPuppi.jersf.txt.gz
         2016_PostVFP:
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L2Relative_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK8PFPuppi.jr.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK8PFPuppi.jersf.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L2Relative_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK8PFPuppi.jr.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK8PFPuppi.jersf.txt.gz
         '2017':
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L2Relative_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_PtResolution_AK8PFPuppi.jr.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_SF_AK8PFPuppi.jersf.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L2Relative_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_PtResolution_AK8PFPuppi.jr.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_SF_AK8PFPuppi.jersf.txt.gz
         '2018':
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L2Relative_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_PtResolution_AK8PFPuppi.jr.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_SF_AK8PFPuppi.jersf.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L2Relative_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_PtResolution_AK8PFPuppi.jr.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_SF_AK8PFPuppi.jersf.txt.gz
       JES_noJER:
         2016_PreVFP:
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L2Relative_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L2Relative_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
         2016_PostVFP:
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L2Relative_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L2Relative_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
         '2017':
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L2Relative_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L2Relative_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
         '2018':
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L2Relative_AK8PFPuppi.jec.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
-        - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L2Relative_AK8PFPuppi.jec.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
+        - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
 jets_calibration:
   factory_file: ./jets_calibrator_JES_JER_Syst.pkl.gz
   jet_types:
     AK4PFchs:
       2016_PreVFP:
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L1FastJet_AK4PFchs.jec.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L2Relative_AK4PFchs.jec.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL16APV_V7_MC_UncertaintySources_AK4PFchs.junc.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_Uncertainty_AK4PFchs.junc.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK4PFchs.jr.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK4PFchs.jersf.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L1FastJet_AK4PFchs.jec.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L2Relative_AK4PFchs.jec.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL16APV_V7_MC_UncertaintySources_AK4PFchs.junc.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_Uncertainty_AK4PFchs.junc.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK4PFchs.jr.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK4PFchs.jersf.txt.gz
       2016_PostVFP:
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L1FastJet_AK4PFchs.jec.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L2Relative_AK4PFchs.jec.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL16_V7_MC_UncertaintySources_AK4PFchs.junc.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_Uncertainty_AK4PFchs.junc.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK4PFchs.jr.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK4PFchs.jersf.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L1FastJet_AK4PFchs.jec.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L2Relative_AK4PFchs.jec.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL16_V7_MC_UncertaintySources_AK4PFchs.junc.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_Uncertainty_AK4PFchs.junc.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK4PFchs.jr.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK4PFchs.jersf.txt.gz
       '2017':
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L1FastJet_AK4PFchs.jec.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L2Relative_AK4PFchs.jec.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL17_V5_MC_UncertaintySources_AK4PFchs.junc.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_Uncertainty_AK4PFchs.junc.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_PtResolution_AK4PFchs.jr.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_SF_AK4PFchs.jersf.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L1FastJet_AK4PFchs.jec.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L2Relative_AK4PFchs.jec.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL17_V5_MC_UncertaintySources_AK4PFchs.junc.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_Uncertainty_AK4PFchs.junc.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_PtResolution_AK4PFchs.jr.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_SF_AK4PFchs.jersf.txt.gz
       '2018':
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L1FastJet_AK4PFchs.jec.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L2Relative_AK4PFchs.jec.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL18_V5_MC_UncertaintySources_AK4PFchs.junc.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_Uncertainty_AK4PFchs.junc.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_PtResolution_AK4PFchs.jr.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_SF_AK4PFchs.jersf.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L1FastJet_AK4PFchs.jec.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L2Relative_AK4PFchs.jec.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/RegroupedV2_Summer19UL18_V5_MC_UncertaintySources_AK4PFchs.junc.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_Uncertainty_AK4PFchs.junc.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_PtResolution_AK4PFchs.jr.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_SF_AK4PFchs.jersf.txt.gz
     AK8PFPuppi:
       2016_PreVFP:
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L2Relative_AK8PFPuppi.jec.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK8PFPuppi.jr.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK8PFPuppi.jersf.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_L2Relative_AK8PFPuppi.jec.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16APV_V7_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK8PFPuppi.jr.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK8PFPuppi.jersf.txt.gz
       2016_PostVFP:
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L2Relative_AK8PFPuppi.jec.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK8PFPuppi.jr.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK8PFPuppi.jersf.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_L2Relative_AK8PFPuppi.jec.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL16_V7_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_PtResolution_AK8PFPuppi.jr.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer20UL16_JRV3_MC_SF_AK8PFPuppi.jersf.txt.gz
       '2017':
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L2Relative_AK8PFPuppi.jec.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_PtResolution_AK8PFPuppi.jr.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_SF_AK8PFPuppi.jersf.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_L2Relative_AK8PFPuppi.jec.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_V5_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_PtResolution_AK8PFPuppi.jr.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL17_JRV3_MC_SF_AK8PFPuppi.jersf.txt.gz
       '2018':
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L2Relative_AK8PFPuppi.jec.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_PtResolution_AK8PFPuppi.jr.txt.gz
-      - /afs/cern.ch/user/p/piosifid/private/MasterPocket/PocketCoffea/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_SF_AK8PFPuppi.jersf.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L1FastJet_AK8PFPuppi.jec.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_L2Relative_AK8PFPuppi.jec.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_UncertaintySources_AK8PFPuppi.junc.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_V5_MC_Uncertainty_AK8PFPuppi.junc.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_PtResolution_AK8PFPuppi.jr.txt.gz
+      - /usr/local/lib/python3.8/site-packages/pocket_coffea/parameters/jec/Summer19UL18_JRV2_MC_SF_AK8PFPuppi.jersf.txt.gz
   collection:
     AK4PFchs: Jet
     AK8PFPuppi: FatJet
@@ -551,6 +551,10 @@ plotting_style:
         - 3
         - 1
       sharex: true
+    systematics:
+      figsize:
+      - 9
+      - 9
   opts_data:
     color: black
     elinewidth: 1

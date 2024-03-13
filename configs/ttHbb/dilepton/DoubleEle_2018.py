@@ -82,7 +82,7 @@ cfg = Configurator(
         },
         "shape": {
             "common":{
-                "inclusive": [ "JES_Total", "JER" ]
+                "inclusive": [  ]
             }
         }
     },
