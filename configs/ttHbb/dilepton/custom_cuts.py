@@ -28,7 +28,7 @@ def get_ht_below(maxht, name=None):
         function=cuts_f.ht_below
     )
 
-dilepton_triggerSF_presel = Cut(
+dilepton_presel_triggerSF= Cut(
     name="dilepton_triggerSF",
     params={
         "METbranch": {
@@ -40,7 +40,13 @@ dilepton_triggerSF_presel = Cut(
         "pt_leading_lepton": 25,
         "mll": 20,
         "mll_SFOS": {'low': 76, 'high': 106},
-	"met": 0,
+#	"met": 0,
+        "njet": 2,
+        "nbjet": 1,
+        "pt_leading_lepton": 25,
+        "met": 40,
+        "mll": 20,
+        "mll_SFOS": {'low': 76, 'high': 106},
 
     },
     function=cuts_f.dilepton_triggerSF,
