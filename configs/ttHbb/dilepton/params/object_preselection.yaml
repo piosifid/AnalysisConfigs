@@ -8,8 +8,9 @@ object_preselection:
   Electron:
     pt: 15.0
     eta: 2.4
-    iso: 0.06
-    id: mvaFall17V2Iso_WP80 #or cutBased
+    #~ iso: 6 # so large, it doesnt matter
+    #~ id: mvaFall17V2Iso_WP80
+    id: mvaIso_WP80
 
   Jet:
     dr_lepton: 0.4
@@ -20,3 +21,6 @@ object_preselection:
       wp: L
       value: 4
       maxpt: 50.0
+    btag: 
+      wp: M
+

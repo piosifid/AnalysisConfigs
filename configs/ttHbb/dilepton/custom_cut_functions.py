@@ -154,7 +154,7 @@ def get_nObj_less(N, coll="JetGood", name=None):
 
 
 def dilepton_triggerSF(events, params, year, sample, **kwargs):
-    MET = events[params["METbranch"][year]]
+    #MET = events[params["METbranch"][year]]
 
     # Masks for same-flavor (SF) and opposite-sign (OS)
     SF = ((events.nMuonGood == 2) & (events.nElectronGood == 0)) | (
@@ -167,7 +167,7 @@ def dilepton_triggerSF(events, params, year, sample, **kwargs):
     mask = (
         (events.nLeptonGood == 2)
         & (ak.firsts(events.LeptonGood.pt) > params["pt_leading_lepton"])
-        & (MET.pt > params["met"])
+        & (events.PuppiMET.pt > params["met"])
         & OS
         & (events.ll.mass > params["mll"])  # Opposite sign
         &
