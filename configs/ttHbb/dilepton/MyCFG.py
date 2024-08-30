@@ -27,7 +27,7 @@ year = "2023_postBPix"
 parameters = defaults.merge_parameters_from_files(default_parameters,
                                                   f"{localdir}/params/object_preselection.yaml",
                                                   f"{localdir}/params/triggers.yaml",
-                                                  f"{localdir}/params/lumi.yaml",
+                                         #         f"{localdir}/params/lumi.yaml",
                                                   update=True)
 parameters["run_period"] = "Run3"
 
@@ -64,8 +64,7 @@ cfg = Configurator(
     #workflow_options = {},
      # Skimming and categorization
     skim = [
-             
-             get_HLTsel(primaryDatasets=["MET"])
+    # get_HLTsel(primaryDatasets=["DoubleEle", "SingleEle"])
              ],
              
     preselections = [dilepton_triggerSF_presel, 
@@ -124,9 +123,9 @@ cfg = Configurator(
         "ElectronGood_pt" : HistConf(
             [
                 Axis(coll="ElectronGood", field="pt", type="variable",
-                     bins=[20, 30, 40, 60, 80, 100, 200],
+                     bins=[25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250],
                      label="Electron $p_{T}$ [GeV]",
-                     lim=(20,200))
+                     lim=(20,250))
             ]
         ),
         "ElectronGood_eta" : HistConf(
@@ -147,8 +146,16 @@ cfg = Configurator(
         "ElectronGood_pt_1" : HistConf(
             [
                 Axis(coll="ElectronGood", field="pt", pos=0, type="variable",
-                     bins=[20, 30, 40, 60, 80, 100, 200],
-                     label="Electron $p_{T}$ [GeV]",
+                     bins=[25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250],
+                     label="Leading Electron $p_{T}$ [GeV]",
+                     lim=(20,200))
+            ]
+        ),
+        "ElectronGood_pt_2" : HistConf(
+            [
+                Axis(coll="ElectronGood", field="pt", pos=1, type="variable",
+                     bins=[25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250],
+                     label="Subleading Electron $p_{T}$ [GeV]",
                      lim=(20,200))
             ]
         ),
@@ -156,7 +163,7 @@ cfg = Configurator(
             [
                 Axis(coll="ElectronGood", field="eta", pos=0, type="variable",
                      bins=[-2.5, -2.0, -1.5660, -1.4442, -1.2, -1.0, -0.8, -0.6, -0.4, -0.2, 0.0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.4442, 1.5660, 2.0, 2.5],
-                     label="leading electron $\eta$",
+                     label="Leading Electron $\eta$",
                      lim=(-2.5,2.5))
             ]
         ),
@@ -167,15 +174,42 @@ cfg = Configurator(
                      label="Electron $\phi$"),
             ]
         ),
-         **count_hist(name="nJets", coll="JetGood",bins=10, start=2, stop=12),  
-         **count_hist(name="nMuons", coll="MuonGood",bins=3, start=0, stop=3),
-         **count_hist(name="nElectrons", coll="ElectronGood",bins=3, start=0, stop=3),
-         **count_hist(name="nLeptons", coll="LeptonGood",bins=3, start=0, stop=5),
+        "ElectronGood_eta_2" : HistConf(
+            [
+                Axis(coll="ElectronGood", field="eta", pos=1, type="variable",
+                     bins=[-2.5, -2.0, -1.5660, -1.4442, -1.2, -1.0, -0.8, -0.6, -0.4, -0.2, 0.0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.4442, 1.5660, 2.0, 2.5],
+                     label="Subleading Electron $\eta$",
+                     lim=(-2.5,2.5))
+            ]
+        ),
+        "ElectronGood_phi_2" : HistConf(
+            [
+                Axis(coll="ElectronGood", field="phi", pos=1,
+                     bins=12, start=-pi, stop=pi,
+                     label="Subleading Electron $\phi$"),
+            ]
+        ),
+        "ht" : HistConf(
+            [
+                Axis(coll="events", field="JetGood_Ht", bins=[40, 60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340, 360, 380, 400, 420, 440, 460, 480, 500], label="$H_T$ [GeV]", lim=(20,500))
+            ]
+        ),
+        "MET" : HistConf(
+            [
+                Axis(coll="MET", field="pt", bins=[0, 20, 40, 60, 80, 100, 125, 150, 175, 200], label="$MET$ [GeV]", lim=(0,200))
+            ]
+        ),
+        **jet_hists(coll="JetGood"),
+        **count_hist(name="nJets", coll="JetGood",bins=10, start=2, stop=12),  
+        **count_hist(name="nMuons", coll="MuonGood",bins=3, start=0, stop=3),
+        **count_hist(name="nElectrons", coll="ElectronGood",bins=3, start=0, stop=3),
+        **count_hist(name="nLeptons", coll="LeptonGood",bins=3, start=0, stop=5),
        
        },
        
        
 )
+ 
  
  
 run_options = {

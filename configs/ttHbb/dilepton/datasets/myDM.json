@@ -58,20 +58,54 @@
                     "era": "G"
                 }
             },
-			{
-				"das_names": [
-					"/Muon0/Run2023C-22Sep2023_v1-v1/NANOAOD", "/Muon0/Run2023C-22Sep2023_v2-v1/NANOAOD",
-					"/Muon0/Run2023C-22Sep2023_v3-v1/NANOAOD", "/Muon0/Run2023C-22Sep2023_v4-v1/NANOAOD",
-					"/Muon1/Run2023C-22Sep2023_v1-v1/NANOAOD", "/Muon1/Run2023C-22Sep2023_v2-v1/NANOAOD",
-					"/Muon1/Run2023C-22Sep2023_v3-v1/NANOAOD", "/Muon1/Run2023C-22Sep2023_v4-v1/NANOAOD"
-				],
-				"metadata": {
-					"year": "2023_preBPix",
-					"isMC": false,
-					"primaryDataset": "DoubleMuon",
-					"era": "C"
-				}
-			},
+	 {
+                "das_names": [
+                    "/Muon0/Run2023C-22Sep2023_v4-v1/NANOAOD",
+                    "/Muon1/Run2023C-22Sep2023_v4-v2/NANOAOD"
+                ],
+                "metadata": {
+                    "year": "2023_preBPix",
+                    "isMC": false,
+                    "primaryDataset": "DoubleMu",
+                    "era": "Cv4"
+                }
+            },
+            {
+                "das_names": [
+                    "/Muon0/Run2023C-22Sep2023_v3-v1/NANOAOD",
+                    "/Muon1/Run2023C-22Sep2023_v3-v1/NANOAOD"
+                ],
+                "metadata": {
+                    "year": "2023_preBPix",
+                    "isMC": false,
+                    "primaryDataset": "DoubleMu",
+                    "era": "Cv3"
+                }
+            },
+            {
+                "das_names": [
+                    "/Muon0/Run2023C-22Sep2023_v2-v1/NANOAOD",
+                    "/Muon1/Run2023C-22Sep2023_v2-v1/NANOAOD"
+                ],
+                "metadata": {
+                    "year": "2023_preBPix",
+                    "isMC": false,
+                    "primaryDataset": "DoubleMu",
+                    "era": "Cv2"
+                }
+            },
+            {
+                "das_names": [
+                    "/Muon0/Run2023C-22Sep2023_v1-v1/NANOAOD",
+                    "/Muon1/Run2023C-22Sep2023_v1-v1/NANOAOD"
+                ],
+                "metadata": {
+                    "year": "2023_preBPix",
+                    "isMC": false,
+                    "primaryDataset": "DoubleMu",
+                    "era": "Cv1"
+                }
+            },
 			{
                 "das_names": [
                     "/Muon0/Run2023D-22Sep2023_v1-v1/NANOAOD", "/Muon0/Run2023D-22Sep2023_v2-v1/NANOAOD",

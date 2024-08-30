@@ -1,0 +1,17 @@
+plotting_style:
+
+  labels_mc:        
+    TTTo2L2Nu: "$t\\bar{t}$ dilepton"
+
+  colors_mc:
+    TTTo2L2Nu: [0.51, 0.79, 1.0]
+
+  samples_groups:
+    ttbar:
+      - TTTo2L2Nu
+
+  rescale_samples:
+    ttbar: 0.65
+
+
+

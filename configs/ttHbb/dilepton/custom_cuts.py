@@ -39,7 +39,7 @@ dilepton_triggerSF_presel= Cut(
         "mll_SFOS": {'low': 76, 'high': 106},
  	"met": 40,
         "njet": 4,
-    #    "nbjet": 0,
+        "nbjet": 2,
  
     },
     function=cuts_f.dilepton_triggerSF,

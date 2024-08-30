@@ -1,9 +1,9 @@
 from pocket_coffea.utils.configurator import Configurator
-from pocket_coffea.lib.cut_functions import get_nObj_eq, get_nObj_min, get_nObj_less, get_HLTsel, get_nBtagMin, get_nElectron, get_nMuon
+from pocket_coffea.lib.cut_functions import get_nObj_eq, get_nObj_min, get_nObj_less, get_HLTsel, get_nBtagMin, get_nElectron, get_nMuon, get_nPVgood, goldenJson, eventFlags
 from pocket_coffea.parameters.histograms import *
 #from params.custom_histograms import *
 from pocket_coffea.parameters.cuts import passthrough
-
+from pocket_coffea.lib.weights.common import common_weights
 import workflow_from_desy
 from workflow_from_desy import ttHbb_Run3Test
 from math import pi
@@ -23,7 +23,7 @@ defaults.register_configuration_dir("config_dir", localdir+"/params")
 
 
 
-year = "2022_postEE"
+year = "2023_preBPix"
 parameters = defaults.merge_parameters_from_files(default_parameters,
                                                   f"{localdir}/params/object_preselection.yaml",
                                                   f"{localdir}/params/triggers.yaml",
@@ -64,7 +64,7 @@ cfg = Configurator(
     workflow = ttHbb_Run3Test,
     #workflow_options = {},
      # Skimming and categorization
-    skim = [ get_nObj_min(2, 15., "Jet"),
+    skim = [ get_nPVgood(1), eventFlags, goldenJson, get_nObj_min(2, 15., "Jet"),
              ],
              
     preselections = [dileptonic_presel 
@@ -72,11 +72,22 @@ cfg = Configurator(
     ],
     
     categories = {
-         "DATA_EGamma"  : {
+         "DATA_EGamma_M"  : {
                 get_nObj_eq(2, 15., "ElectronGood"),
-                get_nObj_eq(2, 25., "LeptonGood"),
+                get_nObj_eq(2, 15., "LeptonGood"),
                 get_nObj_min(1, 25., "ElectronGood"),
                 get_nBtagMin(N=2, coll="BJetGood_M",wp="M"),
+                
+                get_HLTsel(primaryDatasets=["DoubleEle", "SingleEle"]), #i.e. HLT_eleXX_eleXX OR HLT_eleXX
+                # ~ get_HLTsel(primaryDatasets=["DoubleEle"]), #i.e. HLT_eleXX_eleXX OR HLT_eleXX
+                get_HLTsel(primaryDatasets=["MuonEG", "DoubleMuon", "SingleMuon"], invert=True) #i.e. NOT selected by one above
+                # ~ get_HLTsel(primaryDatasets=["MuonEG", "DoubleMuon"], invert=True)] #i.e. NOT selected by one above
+            },
+         "DATA_EGamma_M"  : {
+                get_nObj_eq(2, 15., "ElectronGood"),
+                get_nObj_eq(2, 15., "LeptonGood"),
+                get_nObj_min(1, 25., "ElectronGood"),
+                get_nBtagMin(N=2, coll="BJetGood_M",wp="T"),
                 
                 get_HLTsel(primaryDatasets=["DoubleEle", "SingleEle"]), #i.e. HLT_eleXX_eleXX OR HLT_eleXX
                 # ~ get_HLTsel(primaryDatasets=["DoubleEle"]), #i.e. HLT_eleXX_eleXX OR HLT_eleXX
@@ -86,6 +97,7 @@ cfg = Configurator(
         "inclusive" : [passthrough], 
         
     },
+       weights_classes = common_weights,
        weights = {
         "common": {
             "inclusive": [ "genWeight",
@@ -127,9 +139,9 @@ variables = {
         "ElectronGood_pt" : HistConf(
             [
                 Axis(coll="ElectronGood", field="pt", type="variable",
-                     bins=[30, 35, 40, 50, 60, 70, 80, 90, 100, 130, 200],
-                     label="Electron $p_{T}$ [GeV]",
-                     lim=(20,200))
+                bins=list(range(30, 310, 10)),  # Generate bins from 30 to 300 with a step of 10
+                label="Electron $p_{T}$ [GeV]",
+                lim=(20,300))
             ]
         ),
         "ElectronGood_eta" : HistConf(
@@ -150,9 +162,9 @@ variables = {
         "ElectronGood_pt_1" : HistConf(
             [
                 Axis(coll="ElectronGood", field="pt", pos=0, type="variable",
-                     bins=[30, 35, 40, 50, 60, 70, 80, 90, 100, 130, 200],
-                     label="Electron $p_{T}$ [GeV]",
-                     lim=(20,200))
+                bins=list(range(30, 310, 10)),  # Generate bins from 30 to 300 with a step of 10
+                label="Leading Electron $p_{T}$ [GeV]",
+                lim=(20,300))
             ]
         ),
         "ElectronGood_eta_1" : HistConf(
@@ -166,6 +178,29 @@ variables = {
         "ElectronGood_phi_1" : HistConf(
             [
                 Axis(coll="ElectronGood", field="phi", pos=0,
+                     bins=12, start=-pi, stop=pi,
+                     label="Electron $\phi$"),
+            ]
+        ),
+         "ElectronGood_pt_2" : HistConf(
+            [
+                Axis(coll="ElectronGood", field="pt", pos=1, type="variable",
+                bins=list(range(30, 310, 10)),  # Generate bins from 30 to 300 with a step of 10
+                label="Leading Electron $p_{T}$ [GeV]",
+                lim=(20,300))
+            ]
+        ),
+        "ElectronGood_eta_2" : HistConf(
+            [
+                Axis(coll="ElectronGood", field="eta", pos=1, type="variable",
+                     bins=[-2.5, -2.0, -1.5660, -1.4442, -1.2, -1.0, -0.8, -0.6, -0.4, -0.2, 0.0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.4442, 1.5660, 2.0, 2.5],
+                     label="leading electron $\eta$",
+                     lim=(-2.5,2.5))
+            ]
+        ),
+        "ElectronGood_phi_2" : HistConf(
+            [
+                Axis(coll="ElectronGood", field="phi", pos=1,
                      bins=12, start=-pi, stop=pi,
                      label="Electron $\phi$"),
             ]
