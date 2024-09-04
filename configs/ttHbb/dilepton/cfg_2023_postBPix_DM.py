@@ -4,13 +4,13 @@ from pocket_coffea.parameters.histograms import *
 #from params.custom_histograms import *
 from pocket_coffea.parameters.cuts import passthrough
 from pocket_coffea.lib.weights.common import common_weights
-import workflow_from_desy
-from workflow_from_desy import ttHbb_Run3Test
+import workflow
+from workflow import ttHbb_Run3Test
 from math import pi
-import custom_functions_from_desy
-import custom_cuts_from_desy
-from custom_functions_from_desy import *
-from custom_cuts_from_desy import *
+import custom_function
+import custom_cut
+from custom_function import *
+from custom_cut import *
 # ~ from params.binning import bins
 # ~ from params.axis_settings import axis_settings
 import os
@@ -76,7 +76,7 @@ cfg = Configurator(
                 get_nObj_eq(2, 15., "MuonGood"),
                 get_nObj_eq(2, 15., "LeptonGood"),
                 get_nObj_min(1, 25., "MuonGood"),
-                get_nBtagMin(N=2, coll="BJetGood_M",wp="M"),
+                get_nBtagMin(N=2, coll="BJetGood",wp="M"),
                 
                 get_HLTsel(primaryDatasets=["DoubleMuon", "SingleMuon"]), #i.e. HLT_eleXX_eleXX OR HLT_eleXX
                 # ~ get_HLTsel(primaryDatasets=["DoubleEle"]), #i.e. HLT_eleXX_eleXX OR HLT_eleXX
@@ -128,9 +128,9 @@ variables = {
         "MuonGood_pt" : HistConf(
             [
                 Axis(coll="MuonGood", field="pt", type="variable",
-                bins=list(range(30, 310, 10)),  # Generate bins from 30 to 300 with a step of 10
+                bins=list(range(15, 331, 10)),  # Generate bins from 30 to 300 with a step of 10
                 label="Muon $p_{T}$ [GeV]",
-                lim=(20,300))
+                lim=(15,330))
             ]
         ),
         "MuonGood_eta" : HistConf(
@@ -151,16 +151,16 @@ variables = {
         "MuonGood_pt_1" : HistConf(
             [
                 Axis(coll="MuonGood", field="pt", pos=0, type="variable",
-                bins=list(range(30, 310, 10)),  # Generate bins from 30 to 300 with a step of 10
+                bins=list(range(15, 331, 10)),  # Generate bins from 30 to 300 with a step of 10
                 label="Leading Muon $p_{T}$ [GeV]",
-                lim=(20,300))
+                lim=(15,330))
             ]
         ),
         "MuonGood_eta_1" : HistConf(
             [
                 Axis(coll="MuonGood", field="eta", pos=0, type="variable",
                      bins=[-2.5, -2.0, -1.5660, -1.4442, -1.2, -1.0, -0.8, -0.6, -0.4, -0.2, 0.0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.4442, 1.5660, 2.0, 2.5],
-                     label="leading Muon $\eta$",
+                     label="Leading Muon $\eta$",
                      lim=(-2.5,2.5))
             ]
         ),
@@ -168,22 +168,22 @@ variables = {
             [
                 Axis(coll="MuonGood", field="phi", pos=0,
                      bins=12, start=-pi, stop=pi,
-                     label="Muon $\phi$"),
+                     label="Leading Muon $\phi$"),
             ]
         ),
          "MuonGood_pt_2" : HistConf(
             [
                 Axis(coll="MuonGood", field="pt", pos=1, type="variable",
-                bins=list(range(30, 310, 10)),  # Generate bins from 30 to 300 with a step of 10
-                label="Leading Muon $p_{T}$ [GeV]",
-                lim=(20,300))
+                bins=list(range(15, 331, 10)),  # Generate bins from 30 to 300 with a step of 10
+                label="Subleading Muon $p_{T}$ [GeV]",
+                lim=(15,330))
             ]
         ),
         "MuonGood_eta_2" : HistConf(
             [
                 Axis(coll="MuonGood", field="eta", pos=1, type="variable",
                      bins=[-2.5, -2.0, -1.5660, -1.4442, -1.2, -1.0, -0.8, -0.6, -0.4, -0.2, 0.0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.4442, 1.5660, 2.0, 2.5],
-                     label="leading Muon $\eta$",
+                     label="Subleading Muon $\eta$",
                      lim=(-2.5,2.5))
             ]
         ),
@@ -191,16 +191,32 @@ variables = {
             [
                 Axis(coll="MuonGood", field="phi", pos=1,
                      bins=12, start=-pi, stop=pi,
-                     label="Muon $\phi$"),
+                     label="Subleading Muon $\phi$"),
             ]
         ),
-                "MET" : HistConf(
+        "PuppiMET" : HistConf(
             [
-                Axis(coll="MET", field="pt", bins=[40, 60, 80, 100, 125, 150, 175, 200], label="$MET$ [GeV]", lim=(20,200))
+                Axis(coll="PuppiMET", field="pt", bins=[ 20, 30, 40, 60, 80, 100, 125, 150, 175, 200, 225, 250, 275, 300], start = 20, stop=300, label="$MET$ [GeV]", lim=(20,300))
             ]
         ),        "ht" : HistConf(
             [
-                Axis(coll="events", field="JetGood_Ht", bins=[40, 60, 80, 100, 125, 150, 175, 200], label="$H_T$ [GeV]", lim=(20,200))
+                Axis(coll="events", field="JetGood_Ht", bins=[40, 60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340, 360, 380, 400, 420, 440, 460, 480, 500, 520, 540, 560, 580, 600, 620, 640, 660, 680, 700, 720, 740, 760, 780, 800, 820, 840, 860, 880, 900, 920, 940, 960, 980, 1000], start = 40, stop=1000, label="$H_T$ [GeV]")
+            ]
+        ),
+        "JetGood_pt" : HistConf(
+            [
+                Axis(coll="JetGood", field="pt", type="variable",
+                bins=list(range(15, 331, 10)),  # Generate bins from 30 to 300 with a step of 10
+                label="Electron $p_{T}$ [GeV]",
+                lim=(15,330))
+            ]
+        ),
+        "BJetGood_pt" : HistConf(
+            [
+                Axis(coll="BJetGood", field="pt", type="variable",
+                bins=list(range(15, 331, 10)),  # Generate bins from 30 to 300 with a step of 10
+                label="BJetGood $p_{T}$ [GeV]",
+                lim=(15,330))
             ]
         ),
          **count_hist(name="nJets", coll="JetGood",bins=10, start=2, stop=12),  
@@ -235,9 +251,10 @@ run_options = {
     
     
     
+    
 if "dask"  in run_options["executor"]:
     import cloudpickle
-    cloudpickle.register_pickle_by_value(workflow_from_desy)
-    cloudpickle.register_pickle_by_value(custom_functions_from_desy)
-    cloudpickle.register_pickle_by_value(custom_cuts_from_desy)    
+    cloudpickle.register_pickle_by_value(workflow)
+    cloudpickle.register_pickle_by_value(custom_function)
+    cloudpickle.register_pickle_by_value(custom_cut)  
 
